@@ -22,27 +22,21 @@ class HomeScreen extends StatelessWidget {
               children: [
                 const Gap(40),
                 Row(
-                    mainAxisAlignment: MainAxisAlignment
-                        .spaceBetween, //memberikan jarak pada 2 atau lebih content
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween, //memberikan jarak pada 2 atau lebih content
                     children: [
                       Column(
                         crossAxisAlignment:
                             CrossAxisAlignment.start, //merubah align pada text
                         children: [
-                          Text(
-                            "Good Morning",
-                            style: Styles.headLineStyle3,
+                          Text("Good Morning", style: Styles.headLineStyle3,
                           ),
                           const Gap(5), // memberikan jarak antara content
-                          Text(
-                            "Dimas Kurniawan",
-                            style: Styles.headLineStyle1,
+                          Text("Dimas Kurniawan", style: Styles.headLineStyle1,
                           ),
                         ],
                       ),
                       Container(
-                        height: 50,
-                        width: 50,
+                        height: 50, width: 50,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             image: DecorationImage(
@@ -56,17 +50,15 @@ class HomeScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color.fromARGB(255, 243, 243, 243)),
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical:
-                          12), //membuat container berubah ukuran susuai content dengan jarak yang ditentutkan
-                  child: Row(
+                  padding: 
+                  const EdgeInsets.symmetric(horizontal: 12, vertical: 12), //membuat container berubah ukuran susuai content dengan jarak yang ditentutkan
+                  child: 
+                  Row(
                     children: [
-                      const Icon(FluentSystemIcons.ic_fluent_search_regular,
-                          color: Color.fromARGB(255, 255, 189, 65)),
-                      Text("Search",
+                      const Icon(FluentSystemIcons.ic_fluent_search_regular, color: Color.fromARGB(255, 255, 189, 65)),
+                      Text("Search", style: Styles.headLineStyle4)
                           // style: TextStyle(color: Colors.black),
-                          style: Styles.headLineStyle4)
+                         
                     ],
                   ),
                 ),
@@ -74,18 +66,13 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      "Upcomming Fights",
-                      style: Styles.headLineStyle2,
-                    ),
+                    Text("Upcomming Fights",style: Styles.headLineStyle2,),
                     InkWell(
                       onTap: () {
                         print("You are tapped 1");
                       },
-                      child: Text(
-                        'viewall',
-                        style: Styles.headLineStyle3,
-                      ),
+                      child: 
+                        Text('viewall',style: Styles.headLineStyle3,),
                     )
                   ],
                 )
